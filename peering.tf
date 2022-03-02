@@ -2,7 +2,7 @@
 #### Peering Network ####
 
 resource "azurerm_virtual_network_peering" "peering-a" {
-  count                        = var.count
+  count                        = 2
   name                         = "cl-peering-${var.app-name}-${count.index}"
   resource_group_name          = var.resource_group_name
   virtual_network_name         = var.address_spaces

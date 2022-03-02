@@ -8,11 +8,6 @@ variable "app-name" {
   description = "App Name"
 }
 
-variable "count" {
-  type        = string
-  description = "count"
-}
-
 variable "address_spaces" {
   type        = string
   description = "Virtual Network local"
