@@ -18,3 +18,8 @@ variable "vnet_remote" {
   description = "virtual network remote"
 }
 
+variable "vnet_network" {
+  type        = string
+  description = "virtual network name"
+}
+
