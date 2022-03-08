@@ -9,6 +9,7 @@ resource "azurerm_virtual_network_peering" "peering-a" {
   remote_virtual_network_id    = element(split(",", var.vnet_remote), count.index)
   allow_virtual_network_access = true
   allow_forwarded_traffic      = true
+  provider = "azurerm.dev"
 }
 
 
